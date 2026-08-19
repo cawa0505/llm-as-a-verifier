@@ -313,7 +313,12 @@ configuration and setup details.
 │   ├── run.py                   #   registry-driven benchmark launcher
 │   ├── run_bo3.py               #   reproduce the best-of-3 self-verification run
 │   ├── run_bo5.py               #   reproduce the best-of-5 self-verification run
-│   └── terminal_bench_progress.py  # re-score + plot the progress-tracking example
+│   ├── terminal_bench_progress.py  # re-score + plot the progress-tracking example
+│   ├── smoke_test.py            #   backend connectivity + logprobs check
+│   ├── api_smoke_test.py        #   import/API smoke test
+│   ├── test_smoke_no_logprobs.py    #   failure-path: missing logprobs → non-zero exit
+│   ├── test_smoke_timeout.py        #   failure-path: backend timeout → non-zero exit
+│   └── test_smoke_unparseable_score.py  # failure-path: unparseable score → non-zero exit
 ├── criteria/                    # verifier criteria + ground-truth notes
 │   ├── TEMPLATE.md              #   copy this to write your own
 │   ├── terminal_bench.md

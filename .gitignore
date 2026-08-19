@@ -26,3 +26,17 @@ docs/_build/doctrees/
 
 # Run logs
 logs/
+
+# StateMachineMcp (local state)
+.opencode/
+# Code Relay (local state)
+relay.json
+RESUME.md
+next_step.md
+
+# Private verification docs (contain local paths / LAN IPs)
+docs/VERIFICATION-PLAN.md
+docs/ref/
+
+# Private deployment context (local paths / LAN IPs)
+AGENTS.md
